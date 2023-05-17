@@ -1,8 +1,8 @@
 name: SiamMAE
 title: SiamMAE
 description: NeurIPS 2023 submission
-domain: siam-mae.github.io
-url: https://siam-mae.github.io
+domain: smae.github.io
+url: https://smae.github.io
 remote_theme: pages-themes/cayman@v0.2.0
 markdown: kramdown
 plugins:
