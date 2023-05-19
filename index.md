@@ -14,6 +14,66 @@ Establishing correspondence between images or scenes is a significant challenge 
 
 ## Qualitative results
 
+### Attention Map Visualization
+
+
+We visualize the self-attention map of the ViT-S/8 model. We use the [CLS] token as the query and visualize the attention of a single head from the last layer with 720p images from ImageNet. We find that the model attends to the object boundaries. For instance, it can clearly delineate iconic objects (such as the sheep in the first row, first column), multiple objects (like the three baseball players in the third row, sixth column), and even when the scene is cluttered (as seen with the bird in the second row, fourth column). Unlike contrastive methods, there is no explicit loss function acting on the [CLS] token. These self-attention maps suggest that the model has learned the notion of object boundaries from object motion in videos.
+
+#### Internet Videos
+
+<div style="text-align: center">
+	<video class="results_video_256" playsinline autoplay muted loop>
+		  <source src="resources/wild/dog_black_short.mp4" type='video/mp4'>
+		  <!-- <source src="resources/bair/bair_indiv_0_sfri.mp4" type='video/mp4'> -->
+		  <source src="resources/wild/dog_black_short.webm" type='video/webm'>
+		  Your browser does not support the video tag.
+	</video>	
+	<video class="results_video_256" playsinline autoplay muted loop>
+		  <source src="resources/wild/dog_golden_short.mp4" type='video/mp4'>
+		  <!-- <source src="resources/bair/bair_indiv_0_sfri.mp4" type='video/mp4'> -->
+		  <source src="resources/wild/dog_golden_short.webm" type='video/webm'>
+		  Your browser does not support the video tag.
+	</video>	
+</div>
+
+
+#### DAVIS Videos
+
+<div style="text-align: center">
+	<video class="results_video_256" playsinline autoplay muted loop>
+		  <source src="resources/attn/breakdance-flare.mp4" type='video/mp4'>
+		  <!-- <source src="resources/bair/bair_indiv_0_sfri.mp4" type='video/mp4'> -->
+		  <source src="resources/attn/breakdance-flare.webm" type='video/webm'>
+		  Your browser does not support the video tag.
+	</video>	
+	<video class="results_video_256" playsinline autoplay muted loop>
+		  <source src="resources/attn/pigs.mp4" type='video/mp4'>
+		  <!-- <source src="resources/bair/bair_indiv_0_sfri.mp4" type='video/mp4'> -->
+		  <source src="resources/attn/pigs.webm" type='video/webm'>
+		  Your browser does not support the video tag.
+	</video>
+	<video class="results_video_256" playsinline autoplay muted loop>
+		  <source src="resources/attn/koala.mp4" type='video/mp4'>
+		  <!-- <source src="resources/bair/bair_indiv_0_sfri.mp4" type='video/mp4'> -->
+		  <source src="resources/attn/koala.webm" type='video/webm'>
+		  Your browser does not support the video tag.
+	</video>
+	<video class="results_video_256" playsinline autoplay muted loop>
+		  <source src="resources/attn/snowboard.mp4" type='video/mp4'>
+		  <!-- <source src="resources/bair/bair_indiv_0_sfri.mp4" type='video/mp4'> -->
+		  <source src="resources/attn/snowboard.webm" type='video/webm'>
+		  Your browser does not support the video tag.
+	</video>
+</div>
+
+#### ImageNet Images
+
+<div style="text-align: center">
+	<img src="resources/attention_map.png" alt="Description of Image">
+</div>
+
+---
+
 ### DAVIS: Video Object Segmentation 
 <div style="text-align: center">
 	<video class="results_video_256" playsinline autoplay muted loop>
