@@ -17,7 +17,7 @@ Establishing correspondence between images or scenes is a significant challenge 
 ### Attention Map Visualization
 
 
-We visualize the self-attention map of the ViT-S/8 model. We use the [CLS] token as the query and visualize the attention of a single head from the last layer with 720p images from ImageNet. We find that the model attends to the object boundaries. For instance, it can clearly delineate iconic objects (such as the sheep in the first row, first column), multiple objects (like the three baseball players in the third row, sixth column), and even when the scene is cluttered (as seen with the bird in the second row, fourth column). Unlike contrastive methods, there is no explicit loss function acting on the [CLS] token. These self-attention maps suggest that the model has learned the notion of object boundaries from object motion in videos.
+We visualize the self-attention map of the ViT-S/8 model. We use the [CLS] token as the query and visualize the attention of a subset of heads from the last layer for 720p videos from internet and DAVIS dataset. In addition, we also show attention of a single head from the last layer with 720p images from ImageNet. We find that the model attends to the object boundaries. Unlike contrastive methods, there is no explicit loss function acting on the [CLS] token. These self-attention maps suggest that the model has learned the notion of object boundaries from object motion in videos.
 
 #### Internet Videos
 
